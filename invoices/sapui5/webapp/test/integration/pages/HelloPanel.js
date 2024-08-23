@@ -6,6 +6,7 @@ sap.ui.define([
     /**
     * 
     * @param {typeof sap.ui.test.Opa5} Opa5 
+    * @param {typeof sap.ui.test.actions.Press} Press 
     */
 ], function (Opa5, Press) {
     Opa5.createPageObjects({

@@ -134,7 +134,7 @@
       }
     },
     {
-      "name": "sapui5-config2",
+      "name": "sapui5-config Integration Test",
       "cwd": "${workspaceFolder}/invoices/sapui5",
       "runtimeArgs": [
         "fiori",

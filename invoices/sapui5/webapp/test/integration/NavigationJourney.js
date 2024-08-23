@@ -5,11 +5,11 @@ sap.ui.define([
     "./pages/HelloPanel"
 
      /**
-     * @param {typeof sap.ui.test.opaQUnit} opaQUnit 
+     * @param {typeof sap.ui.test.opaQunit} opaQunit 
      */
-], function (mockServer, opaQUnit){
+], function (mockServer, opaQunit){
      QUnit.module("Navigation")
-     opaQUnit("Should open the Dialog", function(Given, When, Then){
+     opaQunit("Should open the Dialog", function(Given, When, Then){
 
         mockServer.init()
 
@@ -20,7 +20,7 @@ sap.ui.define([
         })
         When.onTheAppPage.iSayHelloDialogButton()
 
-        Then.iSeeTheHelloDialog()
+        Then.onTheAppPage.iSeeTheHelloDialog()
 
         Then.iTeardownMyApp()
      })

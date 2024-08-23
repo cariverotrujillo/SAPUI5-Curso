@@ -26,13 +26,15 @@ sap.ui.define([
         UIComponent.prototype.init.apply(this, arguments)
         // set date view
         this.setModel(models.createRecipient());
-        // set i18n model on view
+/*         // set i18n model on view
         const i18nModel = new ResourceModel({
           bundleName: "logaligroup.sapui5.i18n.i18n"
         });
-        this.setModel(i18nModel, "i18n");
+        this.setModel(i18nModel, "i18n"); */
 
         this._HelloDialog = new helloDialog(this.getRootControl())
+
+        this.getRouter().initialize()
       },
       exit: function(){
         this._HelloDialog.destroy()
